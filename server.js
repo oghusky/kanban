@@ -29,6 +29,8 @@ access public
 //   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 // });
 
+app.use("/api/user", require('./routes/user-routes'))
+
 app.listen(PORT, () => {
   console.log("http://localhost:3001")
 })
